@@ -24,7 +24,7 @@ async def analyze_text_async():
 
     async with client:
         # Construct request
-        request = AnalyzeTextOptions(text="You are an idiot")
+        request = AnalyzeTextOptions(text=input("Enter the text to analyze: "))
 
         # Analyze text
         try:
